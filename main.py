@@ -124,7 +124,7 @@ def login():
                 # else:
                 #     admin_id = False
                 login_user(user)
-                return render_template("/index.html", user_logged=current_user.name, Logged_in=True)
+                return render_template("index.html", user_logged=current_user.name, Logged_in=True)
                 #
                 # return render_template("/index.html", user_logged=current_user.name, Logged_in=True,
                 #                        adminid=admin_id)
