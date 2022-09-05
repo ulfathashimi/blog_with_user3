@@ -81,7 +81,7 @@ def load_user(user_id):
 
 
 # admin_id=""
-@app.route('/')
+@app.route('/index.html')
 def get_all_posts():
     posts = BlogPost.query.all()
     return render_template("index.html", all_posts=posts, Logged_in=current_user.is_authenticated)
